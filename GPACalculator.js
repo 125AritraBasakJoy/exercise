@@ -69,4 +69,9 @@ result = result + " }";
 console.log (result);
 console.log ("");
 console.log("Result: [GPA: " + calculateGPA(subjects.map(subject => subject.marks))+ "]");
-
+// function showSubjects() {
+//     return subjects.map(function (subject){
+//         return subject.name + ": " + subject.marks;
+//     });
+// }
+// console.log("Result: [GPA: " + calculateGPA(+ showSubjects()) + "]");
