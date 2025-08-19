@@ -45,4 +45,18 @@ const iterator = carName.entries();
 console.log(iterator.next().value);
 console.log(iterator.next().value);
 console.log(iterator.next().value);
-//const check = movieReleaseYear.every(year => year > 2000);
+function check(testCheck) {
+    //return testCheck <= 2017;
+    return testCheck <= 2020; 
+}
+console.log(movieReleaseYear.every(check));
+
+const fruit = ["Apple", "Banana", "Cherry", "Date"];
+console.log(fruit.fill("Mango", 1, 4));
+
+function wordCount() {
+    return movieName.filter(function (word){
+        return word.length > 20; 
+    });
+}
+console.log(wordCount());
