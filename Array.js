@@ -3,13 +3,16 @@ const bikes = [
   { name: "Suzuki Gixxer", price: 350000, stock: 3 },
   { name: "Honda CBR 150R", price: 450000, stock: 4 },
   { name: "KTM Duke 200", price: 600000, stock: 2 },
-  { name: "Bajaj Pulsar 150", price: 220000, stock: 6 },
+  { name: "Bajaj Pulsar 150", price: 225000, stock: 6 },
   { name: "Royal Enfield Classic 350", price: 580000, stock: 1 }
 ];
 
 function filterBikeByPrice(bikes,maxPrice){
     return bikes.filter(bikes=> bikes.price <= maxPrice);
-}
+//     return bikes.filter(function (bike) {
+//         return bike.price <= maxPrice;
+//     });
+ }
 
 function UpdatedBikeByPrice(bikes, price){
     return bikes.map(bike => {
@@ -30,6 +33,3 @@ console.log(filterBikeByPrice(bikes, 500000));
 console.log(UpdatedBikeByPrice(bikes));
 console.log("Total stock of bikes: " + TotalStock);
 console.log("Total stock price: " + TotalStockPrice);
-
-
-
