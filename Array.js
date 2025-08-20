@@ -33,3 +33,4 @@ console.log(filterBikeByPrice(bikes, 500000));
 console.log(UpdatedBikeByPrice(bikes));
 console.log("Total stock of bikes: " + TotalStock);
 console.log("Total stock price: " + TotalStockPrice);
+
