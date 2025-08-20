@@ -26,6 +26,8 @@ console.log(information);
 const seriesName = ["Game of Thrones", "Breaking Bad", "Stranger Things", "The Witcher"];
 seriesName.push("The Crown");
 console.log(seriesName);
+seriesName.pop("The Crown");
+console.log(seriesName);
 const movieName = ["Harry Potter", "The Goblet of Fire", "The Deathly Hallows", "The Intern", "The Dark Knight"];
 const movieReleaseYear = [2001, 2005, 2010, 2015, 2018];
 console.log(" ");
@@ -51,8 +53,10 @@ function check(testCheck) {
 }
 console.log(movieReleaseYear.every(check));
 
-const fruit = ["Apple", "Banana", "Cherry", "Date"];
-console.log(fruit.fill("Mango", 1, 4));
+let fruit = ["Apple", "Banana", "Cherry", "Date"];
+let index = 2; 
+console.log(fruit.at(index));
+console.log(fruit.fill("Mango", 1, 4)); //value start, end
 
 function wordCount() {
     return movieName.filter(function (word){
@@ -60,3 +64,93 @@ function wordCount() {
     });
 }
 console.log(wordCount());
+
+//20th August, 2025
+const letArray = [1, 2, 3, 4, 5, 3];
+
+function testArray() {
+    return letArray.findIndex(function (element){
+        return element >= 3;
+    });
+    //return letArray.indexOf(3);
+}
+
+function testArray2(){
+    return letArray.find(function (element){
+        return element > 3;
+    });
+};
+
+function testArray3() {
+    return letArray.findLast(function(element){
+        return element > 3; 
+    });
+}
+
+console.log(testArray(3));
+console.log(letArray.some(testArray));
+console.log(letArray.indexOf(4, 2));
+console.log(letArray.includes(6));
+console.log(letArray.lastIndexOf(3));
+console.log(testArray2());
+
+let fruits = ["Apple", "Banana", ["Cherry", "Date"]];
+let fruits1 = ["Apple", "Banana", ["Cherry", "Date", ["Elderberry", ["Fig", "Grape", "Honeydew"]]]];
+console.log(fruits.flat());
+console.log(fruits1.flat(1)); //declaring depth as 1
+console.log(fruits1.flat(Infinity)); //declaring depth as Infinity
+
+let numbers = [1, 2, 3, 4, 5];
+function myArrayMethod() {
+    return numbers.flatMap(function (num) {
+        return (num * 4)/3;
+    });
+}
+console.log(myArrayMethod());
+
+function myArrayMethod2(){
+    return fruits.forEach(function (fruit){
+        console.log(fruit);
+    });
+}
+console.log(myArrayMethod2());
+
+console.log(carName.join("-"));
+
+const checkCarName = carName.keys();
+for (const key of checkCarName) {
+    console.log((key + 1) + ". " + carName[key]);
+}
+
+function myArrayMethod3(fruit) {
+    return fruit.map(function (fruitName) {
+        //return fruitName.toUpperCase();
+        return fruitName.toLowerCase();
+    });
+}
+console.log(myArrayMethod3(fruit));
+
+const transactions = [
+  { type: "deposit", amount: 1000 },
+  { type: "withdraw", amount: 300 },
+  { type: "deposit", amount: 500 }
+];
+function calculateBalance(transactions) {
+    return transactions.reduce((balance, transaction) => {
+        if (transaction.type === "deposit") {
+            return balance + transaction.amount;
+        } else if (transaction.type === "withdraw") {
+            return balance - transaction.amount;
+        }
+        return balance;
+    }, 0);
+}
+console.log("Total balance: " + calculateBalance(transactions));
+
+let checkNumber = numbers.shift();
+console.log("Shifted number: " + checkNumber); 
+
+console.log("Array after shift: " + fruit.slice(2,4));
+
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+console.log(months.sort());
