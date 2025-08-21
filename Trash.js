@@ -154,3 +154,37 @@ console.log("Array after shift: " + fruit.slice(2,4));
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 console.log(months.sort());
+
+//21th August, 2025
+const nums = [8888, 9999];
+
+console.log(nums.toLocaleString("bn-BD")); 
+
+const formatter = new Intl.ListFormat("bn-BD", {
+  type: "conjunction",
+  //style: "narrow",
+  style: "long"
+});
+
+console.log(formatter.format(nums.map((x) => x.toLocaleString("bn-BD"))));
+
+const userName1 = "John Doe";
+const reverseName = userName1.split(" ").toReversed().join(" ");
+console.log(reverseName);
+
+const myArray3 = [12, 56, 34, 90, 86];
+const sortedArray = myArray3.toSorted();
+console.log(sortedArray);
+
+movieName.toSpliced(2, 0, "The Philosopher's Stone");
+console.log(movieName);
+
+console.log(movieAndSeries.toString());
+console.log(movieName.unshift("The Sorcerer's Stone"));
+console.log(movieName);
+
+const businessName = ["Tech Solutions", "Innovate Corp", "Future Tech", "Global Ventures"];
+const iterators = businessName;
+for(const id of iterators) {
+    console.log(id);
+}
