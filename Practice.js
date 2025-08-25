@@ -37,6 +37,7 @@ BankAccount.prototype.toString = function() {
     return "Account of " + this.userName + " with balance: " + this.balance;
 }
 
+
 const acc = new BankAccount(1000, "Aritra");
 // Object.keys(acc).forEach(key => {
 //     console.log(key + ": " + acc[key]);
