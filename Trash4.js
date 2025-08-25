@@ -1,6 +1,7 @@
 function testVar() {
     if(true) {
         var x = 10;
+        x = 20;
     }
     console.log(x); //Accessible here due to function scope
 }
@@ -10,9 +11,11 @@ testVar();
 function testLet() {
     //let y;
     if(true) {
-        y = 20; // RefferenceError if y is not declared with let
+       let y = 20; // RefferenceError if y is not declared with let
+        y=30;
+        console.log(y); 
     }
-    console.log(y); 
+    //console.log(y); 
 }
 console.log("Testing let:");
 testLet();
