@@ -46,3 +46,19 @@ let checkTest = names.map((names) => {
 });
 test1.append(...checkTest);
 test1.replaceChild(li,test1.firstElementChild);
+
+// let btn = document.querySelector("#btn");
+// if(btn){
+//     btn.setAttribute("name" , "Joy");
+// }
+
+let btn = document.querySelector("#btn");
+// if (btn){
+//     let target = btn.getAttribute("target");
+//     console.log(target);
+// }
+btn.removeAttribute("target");
+console.log(target);
+
+let menu2 = document.querySelector("#testing");
+menu2.style.setProperty("color", "red");
