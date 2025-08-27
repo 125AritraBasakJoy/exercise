@@ -40,4 +40,21 @@ h1.textContent = "This is a heading";
 div.appendChild(h1);
 //h1.appendChild(text);
 document.body.appendChild(div);
-
+let testPara = document.querySelector(".Class1");
+testPara.style .color = "red";
+testPara.style.fontSize = "30px";
+testPara.style.backgroundColor = "yellow";
+testPara.style.padding = "10px";
+testPara.style.border = "2px solid black";
+testPara.style.margin = "10px";
+testPara.style.textAlign = "center";
+testPara.style.fontFamily = "Arial, sans-serif";
+testPara.style.borderRadius = "10px";
+testPara.style.boxShadow = "2px 2px 5px rgba(0, 0, 0, 0.3)";
+testPara.style.width = "50%";
+testPara.style.margin = "auto";
+testPara.style.transition = "all 0.3s ease";
+testPara.style.cursor = "pointer";
+testPara.addEventListener("mouseover", function() {
+    testPara.style.backgroundColor = "lightblue";
+});
