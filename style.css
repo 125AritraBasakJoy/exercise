@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root{
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+    --warning-color: #f39c12;
+    --info-color: #3498db;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --font-family: 'Roboto', sans-serif;    
+}
+.Container{
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: var(--font-family);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-right: auto;
+}
+h2{
+    color:#3498db
+
+}
+.form-control{
+    width: 90%;
+    padding: 10px;
+    margin: 10px ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: #333;
+    text-align: left;
+}
+.username{
+    border-color: var(--info-color);
+    background-color: #eaf6fb;
+}
+.form-control label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.form-control input{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: auto;
+}
+.form-control input:focus{
+    border-color: skyblue;
+    border-style: bold;
+    outline: none;
+} 
+.form-control.success {
+    border-color: var(--success-color); 
+}
+.form-control.error {
+    border-color: var(--error-color);
+}
+.form-control.warning {
+    border-color: var(--warning-color);
+}
+.form-control small{
+    color: var(--error-color);
+    font-size: 12px;
+    margin-top: -5px;
+    display: block;
+    text-align: left;
+    position: absolute;
+    visibility: hidden;
+}
+#Submit{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--info-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
