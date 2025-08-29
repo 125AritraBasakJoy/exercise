@@ -3,39 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action = "" method = "POST" id="myForm"></form>
-    <div class = "Container">
-        <h2> Registration Form </h2>
-        <div class = "form-control">
-            <label for="username">Username</label> <br>
-            <input type = "text" id = "username" placeholder="Enter username"><br>
-            <small> Username should not be empty</small>
+    <form action="" method="POST" id="myForm">
+        <div class="Container">
+            <h2>Registration Form</h2>
+
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+                <small>Username should not be empty</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+                <small>Email should not be empty</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+                <small>Password must be at least 8 characters long</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password2">Confirm Password</label>
+                <input type="password" id="password2" placeholder="Enter password again">
+                <small>Passwords do not match</small>
+            </div>
+
+            <button type="submit" id="Submit">Submit</button>
         </div>
-<br>
-         <div class = "form-control">
-            <label for="email">Email</label> <br>
-            <input type = "text" id = "email" placeholder="Enter email"><br>
-            <small> Email should not be empty</small>
-        </div>
-<br>
-         <div class = "form-control">
-            <label for="password">Password</label> <br>
-            <input type = "password" id = "password" placeholder="Enter password"><br>
-            <small> Password must be 8 characters long</small>
-         </div>
-<br>
-         <div class = "form-control">
-            <label for="password2">Confirm Password</label> <br>
-            <input type = "password" id = "password2" placeholder="Enter password again"><br>
-            <small> Password is not matched</small>
-         </div>
-<br>
-         <button type = "submit" id="Submit">Submit</button>
-    </div>
-    <script src = "Form.js"></script>
+    </form>
+
+    <script src="Form.js"></script>
 </body>
 </html>
