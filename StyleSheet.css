@@ -1,0 +1,102 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #A8BBA3;
+    margin: 0;
+    padding: 40;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.container {
+    background-color: #F7F4EA;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    max-width: 700px;
+    text-align: center;
+    margin: 100px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    color: #124170;
+    margin-bottom: 20px;
+}
+
+.form-control{
+    width: 100%;
+    padding: 5.5px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    position: relative;
+}
+
+.form-control input{
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #EBD9D1;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-control input:focus{
+    border-color: #239BA7;
+    outline: none;
+}
+
+.form-control.success input{
+    border-color:#15ff00;
+}
+
+.form-control.error input{
+    border-color: red;
+}
+
+.form-control small{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+#addTaskButton{
+    width: 50%;
+    padding: 10px;
+    background-color: #555879;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+ul{
+    list-style: none;
+    padding: auto;
+}
+
+li {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#deleteTaskButton{
+    width: 50%;
+    padding: 12px;
+  
+}
