@@ -16,27 +16,53 @@
 // console.log(myNum * 2);
 // console.log(myNum.name);
 
-function BankAccount(balance = 0, userName) {
-    this.balance = balance;
-    this.userName = userName;
-}
-BankAccount.prototype.deposit = function(amount) {
-    this.balance += amount;
-}
-BankAccount.prototype.withdraw = function(amount) {
-    if(amount <= this.balance) {
-        this.balance -= amount;
-    } else {
-        console.log("Insufficient funds");
+// function BankAccount(balance = 0, userName) {
+//     this.balance = balance;
+//     this.userName = userName;
+// }
+// BankAccount.prototype.deposit = function(amount) {
+//     this.balance += amount;
+// }
+// BankAccount.prototype.withdraw = function(amount) {
+//     if(amount <= this.balance) {
+//         this.balance -= amount;
+//     } else {
+//         console.log("Insufficient funds");
+//     }
+// }
+// BankAccount.prototype.valueOf = function() {
+//     return this.balance;
+// }
+// BankAccount.prototype.toString = function() {
+//     return "Account of " + this.userName + " with balance: " + this.balance;
+// }
+
+class BankAccount{
+    constructor(balance = 0, userName){
+        this.balance = balance;
+        this.userName = userName;
+    }
+    
+    deposit(amount){
+        this.balance =+ amount;
+    }
+
+    withdraw(amount){
+        if(amount <= this.balance){
+            this.balance -= amount;
+        }else{
+            console.log("Insufficient Balance");
+        }
+    }
+
+    toValue(){
+        return this.balance;
+    }
+
+    toString(){
+        return `Account of ${this.userName} with balance: ${this.balance}`;
     }
 }
-BankAccount.prototype.valueOf = function() {
-    return this.balance;
-}
-BankAccount.prototype.toString = function() {
-    return "Account of " + this.userName + " with balance: " + this.balance;
-}
-
 
 const acc = new BankAccount(1000, "Aritra");
 // Object.keys(acc).forEach(key => {
