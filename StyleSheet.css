@@ -43,6 +43,7 @@ h1{
     font-size: 16px;
 }
 
+.form-control textarea:focus,
 .form-control input:focus{
     border-color: #239BA7;
     outline: none;
@@ -87,16 +88,40 @@ ul{
 
 li {
   background: #f9f9f9;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 #deleteTaskButton{
-    width: 50%;
-    padding: 12px;
+  width: 50%;
+  padding: 8px 12px;
+  cursor: pointer;
+  align-self: flex-start; 
+  margin-top: auto;
   
+}
+
+.form-control textarea{
+    width: 80%;
+    padding: 20px;
+    margin-top: 5px;
+    border-color: 5px solid #EBD9D1;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.task-desc {
+  font-size: 14px;
+  text-align: justify;
+  align-self: flex-start; 
+  max-width: 90%;
+  margin-bottom: 20px;
+  color: #333;
 }
