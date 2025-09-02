@@ -42,4 +42,5 @@ addTaskButton.addEventListener("click", () => {
 
     taskInput.value = "";
     descriptionInput.value = "";
+    
 });
