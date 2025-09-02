@@ -26,12 +26,12 @@ h1{
 }
 
 .form-control{
-    width: 100%;
-    padding: 5.5px;
-    border: 2px solid #000000;
-    border-radius: 5px;
-    font-size: 16px;
-    position: relative;
+   
+  flex-direction: column;
+  align-items: flex-end; /* Aligns button to the right */
+  gap: 10px;
+  position: relative;
+
 }
 
 .form-control input{
@@ -43,10 +43,23 @@ h1{
     font-size: 16px;
 }
 
+.task-desc {
+  font-size: 14px;
+  text-align: justify;
+  align-self: flex-start; 
+  max-width: 90%;
+  margin-bottom: 20px;
+  color: #333;
+}
+
 .form-control textarea:focus,
 .form-control input:focus{
-    border-color: #239BA7;
-    outline: none;
+  flex: 1 1 auto;
+  padding: 10px;
+  border: 2px solid #EBD9D1;
+  border-radius: 5px;
+  font-size: 16px;
+
 }
 
 .form-control.success input{
@@ -70,15 +83,18 @@ h1{
 }
 
 #addTaskButton{
-    width: 50%;
-    padding: 10px;
-    background-color: #555879;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
+  padding: 5px 16px;
+  background-color: #555879;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  height: fit-content;
+  align-self: flex-start;
+ 
+  
+    
 }
 
 ul{
@@ -108,8 +124,8 @@ li {
 }
 
 .form-control textarea{
-    width: 80%;
-    padding: 20px;
+    width: 88%;
+    padding: 15px;
     margin-top: 5px;
     border-color: 5px solid #EBD9D1;
     border-radius: 5px;
@@ -117,11 +133,15 @@ li {
     font-family: 'Roboto', sans-serif;
 }
 
-.task-desc {
-  font-size: 14px;
-  text-align: justify;
-  align-self: flex-start; 
-  max-width: 90%;
-  margin-bottom: 20px;
-  color: #333;
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
 }
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
