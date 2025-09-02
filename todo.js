@@ -27,6 +27,7 @@ addTaskButton.addEventListener("click", () => {
         taskDescEl.textContent = desc;
         list.appendChild(taskDescEl);
     }
+    
 
     const delBtn = document.createElement("button");
     delBtn.textContent = "Delete";
