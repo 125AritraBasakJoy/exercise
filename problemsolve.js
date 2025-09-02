@@ -1,9 +1,9 @@
-let n = 4; 
+let n = 95; 
 const array = new Array(n).fill(1);
 console.table(array);
 
 function checkIndex(index) {
-    if (index >99) {   
+    if (index >50) {   
         console.error(`Error: index ${index} exceeded 100`);
         return false; 
     }
@@ -11,8 +11,9 @@ function checkIndex(index) {
 }
 
 if (n % 2 === 0) {
-    let left = n / 2 - 1;
-    let right = n / 2;
+    let mid = Math.floor(n / 2);
+    let left = mid - 1;
+    let right = mid;
     while (left >= 0 && right < n) {
         if (!checkIndex(left) || !checkIndex(right)) break;
         array[left] = array[right] = 0;
