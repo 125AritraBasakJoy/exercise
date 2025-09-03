@@ -82,6 +82,7 @@ h1{
     visibility: visible;
 }
 
+
 #addTaskButton{
   padding: 5px 16px;
   background-color: #555879;
@@ -91,10 +92,9 @@ h1{
   font-size: 16px;
   cursor: pointer;
   height: fit-content;
-  align-self: flex-start;
- 
-  
-    
+  margin-right: 20px;
+  float: inline-end;
+
 }
 
 ul{
@@ -137,6 +137,15 @@ body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
+}
+
+#taskList {
+  margin-top: 40px;   
+  width: 80%;
+}
+
+#taskList li {
+  margin-bottom: 20px; 
 }
 
 @keyframes gradientBG {
