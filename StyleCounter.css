@@ -1,1 +1,80 @@
 
+body{
+    background-color: #95d5b2;
+    margin: 0;
+    padding: 40;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    color: #dedbd2;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    padding: auto;
+    font-size: 40px;
+}
+
+.counter-box {
+    background-color: #03045e;
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    max-width: 800px;
+    text-align: center;
+    margin: 100px auto;
+    font-family: 'Roboto', sans-serif;
+    justify-content: flex-start;
+}
+
+.form-control{
+   
+  flex-direction: column;
+  justify-content: flex-end;  
+  align-items: center;    
+  gap: 10px;
+  position: relative;
+
+}
+
+/* #value{
+  flex-direction: column;
+  justify-content: flex-end;  
+  align-items: center;    
+  gap: 10px;
+  position: relative;
+  font-size: 25px;
+} */
+#value > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 18px;
+  font-size: 35px;
+  gap: 15;
+}
+
+#increment{
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 18px;
+  font-size: 25px;
+  gap: 15;
+}
+
+#decrement{
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 18px;
+  font-size: 25px;
+  gap: 15;
+}
+
+#message {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+}
