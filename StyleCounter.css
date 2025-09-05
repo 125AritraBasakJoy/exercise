@@ -73,6 +73,14 @@ h1{
   gap: 15;
 }
 
+#reset{
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 18px;
+  font-size: 25px;
+  gap: 15;
+}
+
 #message {
   margin-top: 10px;
   color: red;
