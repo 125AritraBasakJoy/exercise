@@ -10,14 +10,17 @@ document.addEventListener("submit", function(event){
         email: email 
     };
 
-      sessionStorage.localStorage("user", JSON.stringify(userData));
+      // sessionStorage.setItem("user", JSON.stringify(userData));
+      localStorage.setItem("user", JSON.stringify(userData));
       alert("Data Saved!");
+      document.getElementById("userForm").reset();
     });
 
     
     document.getElementById("loadData");
     document.addEventListener("click", function(){
-      let savedData = sessionStorage.getItem("user");
+    // let savedData = sessionStorage.getItem("user");
+    let savedData = localStorage.getItem("user");
 
       if (savedData) {
         let user = JSON.parse(savedData);
